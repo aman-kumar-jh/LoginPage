@@ -21,7 +21,7 @@ async function verifyCaptcha(captcha) {
   try {
     const res = await axios.get(verifyUrl);
     const result = res.data;
-    console.log(result.score);
+    console.log("score: ",result.score);
 
     // result is successful and score is greater than 0.5 true 
     if (result.success) {
