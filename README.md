@@ -12,7 +12,7 @@
 ## To Run The Project
 
 #### Clone the repository
-#### Download npm
+#### Download npm/yarn
 #### Install redis sever
 #### Start redis-cli
 #### Run npm install
