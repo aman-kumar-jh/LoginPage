@@ -164,8 +164,12 @@ var submitC = async function (e) {
   e.preventDefault();
 
   // check for email and name null values
-  if(email.value === "" || username.value === ""){
+  if(email.value === ""){
     alert("Enter Valid Email");
+    location.reload();
+    return;
+  }else if(username.value === ""){
+    alert("Enter Valid Name");
     location.reload();
     return;
   }
