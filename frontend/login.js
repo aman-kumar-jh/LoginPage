@@ -163,6 +163,13 @@ var keyupC = function () {
 var submitC = async function (e) {
   e.preventDefault();
 
+  // check for email and name null values
+  if(email.value === "" || username.value === ""){
+    alert("Enter Valid Email");
+    location.reload();
+    return;
+  }
+
   /**
    * get count of ip address in 1 day which try to register
    * count range will in [0,4]

@@ -132,7 +132,7 @@ router.post("/registerUser", async (req, res) => {
     return res.status(401).send()
   }
 
-  // check for input feild validation
+  // check for input field validation using JOI schema
   try {
     await UserValidationSchema.validateAsync(req.body.reg);
     const userInfo = new User(req.body.reg);
