@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'frontend')));
 app.get('/', function(req, res){
 	res.
 	status(200)
-	.sendFile(path.join(__dirname + '/frontend/login.html'));
+	.sendFile(path.join(__dirname + '/frontend/signUp.html'));
 });
 
 // enabling the all the required interaction between the frontend and backend
