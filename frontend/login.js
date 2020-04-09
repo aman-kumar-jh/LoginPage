@@ -191,8 +191,9 @@ var submitC = async function (e) {
       }
     })
     .catch((err) => {
+      console.log(err);
       alert("Something went wrong, Please try again");
-      location.reload();
+      //location.reload();
     });
   
   // data of the user registration form 
