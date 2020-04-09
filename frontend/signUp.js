@@ -63,7 +63,7 @@ async function RegisterUser(data,token) {
      * making ajax call to our API
      */
     await ajax(
-      "http://127.0.0.1:3000/registerUser",
+      "http://ec2-18-191-248-252.us-east-2.compute.amazonaws.com:3000/registerUser",
       "POST",
       JSON.stringify(data)
     )
@@ -181,7 +181,7 @@ var submitC = async function (e) {
    * once count of ip reaches it remain the same
    */
   let IPfreq = 0;
-  await ajax("http://127.0.0.1:3000/ip/address", "GET", JSON.stringify({}))
+  await ajax("http://ec2-18-191-248-252.us-east-2.compute.amazonaws.com:3000/ip/address", "GET", JSON.stringify({}))
     .then((data) => {
       data = JSON.parse(data);
       if (data.status === true) {
