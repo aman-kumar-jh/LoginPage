@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      ImageKit.io
+    </title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="anim"><h1>Sign Up</h1></div>
+
+      <div class="box">
+        <div class="img">
+          <img src="photo/profile.png" alt="Profile Photo" class="profilePhoto" />
+        </div>
+
+        <form class="loginDetails">
+          Name
+
+          <div class="text">
+            <input
+              type="text"
+              placeholder="Enter Your Name"
+              id="username"
+              required
+            />
+          </div>
+
+          Email
+
+          <div class="text">
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              id="email"
+              required
+            />
+          </div>
+
+          Password
+
+          <div class="text">
+            <input
+              type="password"
+              placeholder="Enter Password"
+              id="psw"
+              required
+            />
+            <input type="checkbox" onclick="visible()" id="shPsw" />
+            <label for="shPsw">Show Password</label>
+          </div>
+          <button id = "submitForm" type="submit">Login</button>
+        </form>
+        <div class = "message" id ="message">
+          <h3>Password must contain the following:</h3>
+          <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+          <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+          <p id="number" class="invalid">A <b>number</b></p>
+          <p id="length" class="invalid">Number of characters between<b> [8-20]</b></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lf1fOcUAAAAAMQTeUtWGVPwuAyFumObDFCkI-l9"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
