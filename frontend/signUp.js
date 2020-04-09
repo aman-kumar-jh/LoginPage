@@ -22,6 +22,7 @@ async function ajax(url, method, data) {
     request.responseType = "text";
     request.setRequestHeader("Content-Type", "application/json");
     request.onreadystatechange = function () {
+      console.log(request);
       if (request.readyState === XMLHttpRequest.DONE) {
         if (request.status === 201 || request.status == 200) {
           resolve(request.responseText);
