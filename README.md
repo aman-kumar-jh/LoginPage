@@ -20,4 +20,4 @@
 #### Start redis-cli
 #### Run npm install
 
-### ! Not Mobile friendly so look might be a bit weird
+### ! Not Mobile friendly so look might be a bit weird in mobile/tablet
